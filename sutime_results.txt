@@ -1,0 +1,1364 @@
+C:\Users\Leandra\Anaconda2\pythonw.exe C:/Users/Leandra/Documents/Fall2016/NLP/carpool-search/entity_rec_test.py
+loading data
+Hello! I'm looking for a ride from Montreal (Berri-UQAM) to Bishop's for two people on September 2nd, ideally leaving Montreal around 10 AM.
+C:\Users\Leandra\Documents\Fall2016\NLP\carpool-search\jars
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator sutime with class edu.stanford.nlp.time.TimeAnnotator
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.TokenizerAnnotator - TokenizerAnnotator: No tokenizer type provided. Defaulting to PTBTokenizer.
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator pos
+Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [1.5 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ner
+sutime.includeRange=false
+Unknown property: |sutime.includeRange|
+sutime.markTimeRanges=true
+Unknown property: |sutime.markTimeRanges|
+Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... Unknown property: |sutime.includeRange|
+Unknown property: |sutime.markTimeRanges|
+done [2.4 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... Unknown property: |sutime.includeRange|
+Unknown property: |sutime.markTimeRanges|
+done [2.1 sec].
+Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... Unknown property: |sutime.includeRange|
+Unknown property: |sutime.markTimeRanges|
+done [3.1 sec].
+[main] INFO edu.stanford.nlp.time.JollyDayHolidays - Initializing JollyDayHoliday for SUTime from classpath edu/stanford/nlp/models/sutime/jollyday/Holidays_sutime.xml as sutime.binder.1.
+Reading TokensRegex rules from edu/stanford/nlp/models/sutime/defs.sutime.txt
+Nov 16, 2016 11:12:23 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+INFO: Read 83 rules
+Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.sutime.txt
+Nov 16, 2016 11:12:23 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+INFO: Read 267 rules
+Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.holidays.sutime.txt
+Nov 16, 2016 11:12:23 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+INFO: Read 25 rules
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator sutime
+[main] INFO edu.stanford.nlp.time.JollyDayHolidays - Initializing JollyDayHoliday for SUTime from classpath edu/stanford/nlp/models/sutime/jollyday/Holidays_sutime.xml as sutime.binder.1.
+Reading TokensRegex rules from edu/stanford/nlp/models/sutime/defs.sutime.txt
+Nov 16, 2016 11:12:23 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+INFO: Read 83 rules
+Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.sutime.txt
+Nov 16, 2016 11:12:23 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+INFO: Read 267 rules
+Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.holidays.sutime.txt
+Nov 16, 2016 11:12:23 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+INFO: Read 25 rules
+I'm taking 95 south back to SOUTH CAROLINA!! The 843. Leaving Friday @ 2 p.m.
+[
+    {
+        "end": 68, 
+        "start": 62, 
+        "text": "Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }, 
+    {
+        "end": 77, 
+        "start": 71, 
+        "text": "2 p.m.", 
+        "type": "TIME", 
+        "value": "2016-11-16T14:00"
+    }
+]
+Hello! I'm looking for a ride from Montreal (Berri-UQAM) to Bishop's for two people on September 2nd, ideally leaving Montreal around 10 AM.
+[
+    {
+        "end": 100, 
+        "start": 87, 
+        "text": "September 2nd", 
+        "type": "DATE", 
+        "value": "2016-09-02"
+    }, 
+    {
+        "end": 139, 
+        "start": 134, 
+        "text": "10 AM", 
+        "type": "TIME", 
+        "value": "2016-11-16T10:00"
+    }
+]
+looking for a ride to Montreal on Thursday if anyone has a spot!
+[
+    {
+        "end": 42, 
+        "start": 34, 
+        "text": "Thursday", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+Totally unrelated to rides, but I'm running for the next Virginia Tech Face of Summer. If you guys could please take 30 seconds to go to their page and vote for me, Brooke Hines, I would really appreciate it! Thanks so much! http://www.facebook.com/pages/Virginia-Tech-Summer-Sessions/102138727375
+[
+    {
+        "end": 85, 
+        "start": 79, 
+        "text": "Summer", 
+        "type": "DATE", 
+        "value": "2016-SU"
+    }, 
+    {
+        "end": 127, 
+        "start": 117, 
+        "text": "30 seconds", 
+        "type": "DURATION", 
+        "value": "PT30S"
+    }
+]
+Leaving to VA beach tomorrow hmu for a ride
+[
+    {
+        "end": 28, 
+        "start": 20, 
+        "text": "tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+I'm looking up for a ride up to UVA on Feb. 17th! I'll pitch in for gas!
+[
+    {
+        "end": 48, 
+        "start": 39, 
+        "text": "Feb. 17th", 
+        "type": "DATE", 
+        "value": "2017-02-17"
+    }
+]
+Is anyone going from Eugene to Ashland this Friday, the 12th? Four of us ar looking for a ride and will help pay for gas!! Thanks so much :)
+[
+    {
+        "end": 50, 
+        "start": 39, 
+        "text": "this Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }
+]
+Looking for a ride back to Blacksburg from Fredericksburg/Stafford/Richmond/Chesterfield on Sunday!
+[
+    {
+        "end": 98, 
+        "start": 92, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-13"
+    }
+]
+Last call, driving to mtl this evening at 5:30, coming back on sunday :)
+[
+    {
+        "end": 46, 
+        "start": 26, 
+        "text": "this evening at 5:30", 
+        "type": "TIME", 
+        "value": "2016-11-16T05:30"
+    }, 
+    {
+        "end": 69, 
+        "start": 63, 
+        "text": "sunday", 
+        "type": "DATE", 
+        "value": "2016-11-13"
+    }
+]
+Not sure if this is the correct group to post in, but would there happen to be anyone in the Lake Nona area who goes to campus on Fridays or Saturdays? I'm becoming involved with one of the clubs on campus but am looking at making the round trip five days a week... not sure if I can afford it lol.
+[
+    {
+        "end": 137, 
+        "start": 130, 
+        "text": "Fridays", 
+        "type": "SET", 
+        "value": "XXXX-WXX-5"
+    }, 
+    {
+        "end": 150, 
+        "start": 141, 
+        "text": "Saturdays", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }, 
+    {
+        "end": 255, 
+        "start": 246, 
+        "text": "five days", 
+        "type": "DURATION", 
+        "value": "P5D"
+    }, 
+    {
+        "end": 262, 
+        "start": 256, 
+        "text": "a week", 
+        "type": "DURATION", 
+        "value": "P1W"
+    }
+]
+Going to NOVA (Woodbridge/Manassas/Dumfries) on Wednesday at 1:30, Gas $ apreciated!
+[
+    {
+        "end": 65, 
+        "start": 48, 
+        "text": "Wednesday at 1:30", 
+        "type": "TIME", 
+        "value": "2016-11-16T01:30"
+    }
+]
+looking for a ride from montreal to sherbrooke on monday anytime thanks
+[
+    {
+        "end": 56, 
+        "start": 50, 
+        "text": "monday", 
+        "type": "DATE", 
+        "value": "2016-11-14"
+    }
+]
+Is anyone driving from Bethesda/DC/Nova to Tech this Sunday (10/4)? Will pay for gas!
+[
+    {
+        "end": 59, 
+        "start": 48, 
+        "text": "this Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+Looking for ride to Mtl tomorrow after 230 before 5
+[
+    {
+        "end": 32, 
+        "start": 24, 
+        "text": "tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+Anyone commute from Carroll county to VT everyday?
+[]
+Need a ride from richmond to virginia beach, sunday at any time! Can help with gas!
+[
+    {
+        "end": 51, 
+        "start": 45, 
+        "text": "sunday", 
+        "type": "DATE", 
+        "value": "2016-11-13"
+    }
+]
+Going to springfield NOVA on Wednesday. If anyone needs a ride let me know.
+[
+    {
+        "end": 38, 
+        "start": 29, 
+        "text": "Wednesday", 
+        "type": "DATE", 
+        "value": "2016-11-16"
+    }
+]
+OFFER Sunday, Dec. 7 at 5:30 am BU to MTL 1 place Text 5147162504 or comment!
+[
+    {
+        "end": 31, 
+        "start": 6, 
+        "text": "Sunday, Dec. 7 at 5:30 am", 
+        "type": "TIME", 
+        "value": "2016-12-07T05:30"
+    }
+]
+I'm Looking for a ride to jmu on the 30th of January and a ride back on the 1st of February, willing to pay gas. Please message me if you have an extra seat :)
+[
+    {
+        "end": 52, 
+        "start": 33, 
+        "text": "the 30th of January", 
+        "type": "DATE", 
+        "value": "2017-01-30"
+    }, 
+    {
+        "end": 91, 
+        "start": 72, 
+        "text": "the 1st of February", 
+        "type": "DATE", 
+        "value": "2017-02-01"
+    }
+]
+anyone going to the twin cities this weekend? i will help pay for gas.
+[
+    {
+        "end": 44, 
+        "start": 32, 
+        "text": "this weekend", 
+        "type": "DATE", 
+        "value": "2016-W46-WE"
+    }
+]
+i'm going to north jersey for thanksgiving on wednesday morning the 21st and coming back saturday. i have two more seats available so message me if you need a ride! i go up 81 so i could drop you off along there too
+[
+    {
+        "end": 42, 
+        "start": 30, 
+        "text": "thanksgiving", 
+        "type": "DATE", 
+        "value": "2016-11-24"
+    }, 
+    {
+        "end": 63, 
+        "start": 46, 
+        "text": "wednesday morning", 
+        "type": "TIME", 
+        "value": "2016-11-16TMO"
+    }, 
+    {
+        "end": 97, 
+        "start": 89, 
+        "text": "saturday", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }
+]
+If someone gives me a ride back to gf from the cities on Sunday I'll pay you in money and chocolate. (I'm a little desperate)
+[
+    {
+        "end": 63, 
+        "start": 57, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+Is anyone headed to Myrtle Beach for Thanksgiving Break. Will pay for gas
+[
+    {
+        "end": 49, 
+        "start": 37, 
+        "text": "Thanksgiving", 
+        "type": "DATE", 
+        "value": "2016-11-24"
+    }
+]
+Is anyone going to Richmond Thursday the 18th??
+[
+    {
+        "end": 45, 
+        "start": 28, 
+        "text": "Thursday the 18th", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }
+]
+Looking for BU to MTL after 7pm today, 1 spot
+[
+    {
+        "end": 37, 
+        "start": 28, 
+        "text": "7pm today", 
+        "type": "TIME", 
+        "value": "2016-11-16T19:00"
+    }
+]
+Need a ride from nova (tysons) to VCU on Sunday possibly around noon! $ provided
+[
+    {
+        "end": 47, 
+        "start": 41, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 68, 
+        "start": 64, 
+        "text": "noon", 
+        "type": "TIME", 
+        "value": "2016-11-16T12:00"
+    }
+]
+Anyone need a ride from Orlando down to south florida from Orlando on Sunday around 1 or 2?
+[
+    {
+        "end": 76, 
+        "start": 70, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+Driving from BU to OTTAWA Thursday, October 10th
+[
+    {
+        "end": 48, 
+        "start": 26, 
+        "text": "Thursday, October 10th", 
+        "type": "DATE", 
+        "value": "2016-10-10"
+    }
+]
+Going to London tomorrow, Sat. 18th, 11ish. any takers? 4 seats available
+[
+    {
+        "end": 29, 
+        "start": 16, 
+        "text": "tomorrow, Sat", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+Driving to Stafford on Friday (6/5) around 2 pm. Passing through Fredericksburg, Charlottesville, and some other places along 81 and 64. Message me if you need a ride.
+[
+    {
+        "end": 29, 
+        "start": 23, 
+        "text": "Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }, 
+    {
+        "end": 47, 
+        "start": 43, 
+        "text": "2 pm", 
+        "type": "TIME", 
+        "value": "2016-11-16T14:00"
+    }
+]
+Hey people! I am going to be doing an airport run on Saturday around 11:30pm if anyone else needs a ride back to Uconn
+[
+    {
+        "end": 61, 
+        "start": 53, 
+        "text": "Saturday", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }, 
+    {
+        "end": 76, 
+        "start": 69, 
+        "text": "11:30pm", 
+        "type": "TIME", 
+        "value": "2016-11-16T23:30"
+    }
+]
+driving back to uva from centreville tomorrow (either morning or evening) dont know yet
+[
+    {
+        "end": 45, 
+        "start": 37, 
+        "text": "tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }, 
+    {
+        "end": 61, 
+        "start": 54, 
+        "text": "morning", 
+        "type": "TIME", 
+        "value": "2016-11-16TMO"
+    }, 
+    {
+        "end": 72, 
+        "start": 65, 
+        "text": "evening", 
+        "type": "TIME", 
+        "value": "2016-11-16TEV"
+    }
+]
+Last call, one seat left.. Tomorrow at 11 from fairfax high to RVA. Message me.. ( girls only plz)
+[
+    {
+        "end": 35, 
+        "start": 27, 
+        "text": "Tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+Looking for a ride from Richmond to Virginia Beach. Gas money provided!
+[]
+Looking to get a ride towards bend/lapine Sunday early to meet some friends for snowboarding. Got gas money n your welcome to tag along if u have gear
+[
+    {
+        "end": 48, 
+        "start": 42, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+I'm driving from the 757 area (specifically Sandbridge) on Sunday afternoon. I'm going to take 460 west so message me if you need a ride!
+[
+    {
+        "end": 75, 
+        "start": 59, 
+        "text": "Sunday afternoon", 
+        "type": "TIME", 
+        "value": "2016-11-20TAF"
+    }
+]
+Anyone going from NoVa to campus today? I'm in Lorton (Alexandria/Springfield area) and would appreciate a ride and course, chip in for gas money! Please message me, trying to find a ride asap.
+[
+    {
+        "end": 38, 
+        "start": 33, 
+        "text": "today", 
+        "type": "DATE", 
+        "value": "2016-11-16"
+    }
+]
+Anyone going to Virginia Beach this weekend? Gas money Provided!
+[
+    {
+        "end": 43, 
+        "start": 31, 
+        "text": "this weekend", 
+        "type": "DATE", 
+        "value": "2016-W46-WE"
+    }
+]
+Going to rva in a couple of hours ga$
+[
+    {
+        "end": 33, 
+        "start": 16, 
+        "text": "a couple of hours", 
+        "type": "DURATION", 
+        "value": "PT2H"
+    }
+]
+Going to nova (Tysons corner) on Friday the 22nd at 9 am. Message me if you need a ride!
+[
+    {
+        "end": 56, 
+        "start": 33, 
+        "text": "Friday the 22nd at 9 am", 
+        "type": "TIME", 
+        "value": "2016-11-22T09:00"
+    }
+]
+I know it's a little late but I'm going to hampden Sydney in FarmVille VA Tomorrow for the weekend. If you wanna go or need a ride somewhere close let me know! Also close to longwood university
+[
+    {
+        "end": 82, 
+        "start": 74, 
+        "text": "Tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }, 
+    {
+        "end": 98, 
+        "start": 87, 
+        "text": "the weekend", 
+        "type": "DATE", 
+        "value": "2016-W46-WE"
+    }
+]
+Is anyone heading from Charlottesville to Blacksburg on Sunday (2/21)? I can pay gas money
+[
+    {
+        "end": 62, 
+        "start": 56, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+Anyone leaving Bing and going to Long Island this Friday ?
+[
+    {
+        "end": 56, 
+        "start": 45, 
+        "text": "this Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }
+]
+is anyone driving to dc/day glow the weekend of sept. 30?
+[
+    {
+        "end": 56, 
+        "start": 33, 
+        "text": "the weekend of sept. 30", 
+        "type": "DATE", 
+        "value": "2016-09-30"
+    }
+]
+Late notice but I'm leavin for nova (Herndon) tonight around 7 ish. Hmu if you need a ride
+[
+    {
+        "end": 53, 
+        "start": 46, 
+        "text": "tonight", 
+        "type": "TIME", 
+        "value": "2016-11-16TNI"
+    }
+]
+Going to NOVA this THURSDAY at 2pm. Message me if you'd like a ride. Dropping of at the East Falls Church metro. Comment here if you're having trouble messaging me.
+[
+    {
+        "end": 35, 
+        "start": 14, 
+        "text": "this THURSDAY at 2pm.", 
+        "type": "TIME", 
+        "value": "2016-11-17T14:00"
+    }, 
+    {
+        "end": 98, 
+        "start": 93, 
+        "text": "Falls", 
+        "type": "DATE", 
+        "value": "2016-FA"
+    }
+]
+Can anyone bring me to the Short Pump Apple Store on Tuesday? I have to bring my macbook in at 1:15.
+[
+    {
+        "end": 60, 
+        "start": 53, 
+        "text": "Tuesday", 
+        "type": "DATE", 
+        "value": "2016-11-15"
+    }, 
+    {
+        "end": 99, 
+        "start": 95, 
+        "text": "1:15", 
+        "type": "TIME", 
+        "value": "2016-11-16T01:15"
+    }
+]
+Anyone going to RVA from Nova next week Wednesday or Thursday? (6/22-6/23)
+[
+    {
+        "end": 49, 
+        "start": 30, 
+        "text": "next week Wednesday", 
+        "type": "DATE", 
+        "value": "2016-11-23"
+    }, 
+    {
+        "end": 61, 
+        "start": 53, 
+        "text": "Thursday", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+anyone know someone driving from nova to vcu this today, my friend needs a ride gas money provided
+[
+    {
+        "end": 55, 
+        "start": 45, 
+        "text": "this today", 
+        "type": "DATE", 
+        "value": "2016-11-16"
+    }
+]
+Looking for a ride back from JMU on Sunday. Only need the ride back to VCU, and I'll obviously pitch in for gas money. Let me know if you have an extra seat! Thanks!
+[
+    {
+        "end": 42, 
+        "start": 36, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+Going to UVa this Friday at 2pm, returning Sunday around 7pm. I have room for one more. Going to UVa for Reading Days next Thursday around dinner time, returning Sunday around 7pm. I have room for 4 passengers.
+[
+    {
+        "end": 31, 
+        "start": 13, 
+        "text": "this Friday at 2pm", 
+        "type": "TIME", 
+        "value": "2016-11-18T14:00"
+    }, 
+    {
+        "end": 49, 
+        "start": 43, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 61, 
+        "start": 57, 
+        "text": "7pm.", 
+        "type": "TIME", 
+        "value": "2016-11-16T19:00"
+    }, 
+    {
+        "end": 131, 
+        "start": 113, 
+        "text": "Days next Thursday", 
+        "type": "DATE", 
+        "value": "2016-11-24-WXX-4 INTERSECT P1D"
+    }, 
+    {
+        "end": 168, 
+        "start": 162, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 180, 
+        "start": 176, 
+        "text": "7pm.", 
+        "type": "TIME", 
+        "value": "2016-11-16T19:00"
+    }
+]
+Anyone have room for two headed to NOVA (preferably South Riding/Chantilly area) on Thursday (March 5th) for Spring Break?  We will pay for gas and provide baked goods!!!
+[
+    {
+        "end": 92, 
+        "start": 84, 
+        "text": "Thursday", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }, 
+    {
+        "end": 103, 
+        "start": 94, 
+        "text": "March 5th", 
+        "type": "DATE", 
+        "value": "2017-03-05"
+    }, 
+    {
+        "end": 115, 
+        "start": 109, 
+        "text": "Spring", 
+        "type": "DATE", 
+        "value": "2016-SP"
+    }
+]
+Anyone going to virginia beach/ Hampton roads area Thursday night or Friday?  Have money for gas plus lots of snacks if needed.
+[
+    {
+        "end": 65, 
+        "start": 51, 
+        "text": "Thursday night", 
+        "type": "TIME", 
+        "value": "2016-11-17TNI"
+    }, 
+    {
+        "end": 75, 
+        "start": 69, 
+        "text": "Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }
+]
+anyone going to London March 12th?
+[
+    {
+        "end": 33, 
+        "start": 23, 
+        "text": "March 12th", 
+        "type": "DATE", 
+        "value": "2017-03-12"
+    }
+]
+Driving to Clemson this weekend and leaving Friday at noon and returning on Sunday most likely at noon if anyone would like a ride either way!
+[
+    {
+        "end": 31, 
+        "start": 19, 
+        "text": "this weekend", 
+        "type": "DATE", 
+        "value": "2016-W46-WE"
+    }, 
+    {
+        "end": 58, 
+        "start": 44, 
+        "text": "Friday at noon", 
+        "type": "TIME", 
+        "value": "2016-11-18T12:00"
+    }, 
+    {
+        "end": 82, 
+        "start": 76, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 102, 
+        "start": 98, 
+        "text": "noon", 
+        "type": "TIME", 
+        "value": "2016-11-16T12:00"
+    }
+]
+Anyone heading towards NYC and are planning on going through Rockland County? I could use a ride there for this weekend. I can chip in for gas if needed
+[
+    {
+        "end": 119, 
+        "start": 107, 
+        "text": "this weekend", 
+        "type": "DATE", 
+        "value": "2016-W46-WE"
+    }
+]
+Driving to Nova(woodbridge area) Saturday night. message me if interested
+[
+    {
+        "end": 47, 
+        "start": 33, 
+        "text": "Saturday night", 
+        "type": "TIME", 
+        "value": "2016-11-19TNI"
+    }
+]
+HEY! Would anyone be willing to give my boyfriend and I a ride to king's dominion around 7? Just a ride there (we have a ride back) and I'll pay for gas! Quick way to make a few extra bucks!
+[]
+Hello, is anyone driving from Nova to VCU today? Gas money can be provided
+[
+    {
+        "end": 47, 
+        "start": 42, 
+        "text": "today", 
+        "type": "DATE", 
+        "value": "2016-11-16"
+    }
+]
+Looking for a ride Friday around 12ish or afternoon time back from NOVA back to Blacksburg! Let me know!
+[
+    {
+        "end": 25, 
+        "start": 19, 
+        "text": "Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }, 
+    {
+        "end": 51, 
+        "start": 42, 
+        "text": "afternoon", 
+        "type": "TIME", 
+        "value": "2016-11-16TAF"
+    }
+]
+Leaving for NOVA (McLean/Tyson's area) tomorrow 9/24 after 3ish and have 1 seat open, 20$ for gas, message me if you need a ride
+[
+    {
+        "end": 47, 
+        "start": 39, 
+        "text": "tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+Driving to JMU and then to Newport News (can drop off at CNU) on Friday the 20th and returning Sunday evening! Two seats available.
+[
+    {
+        "end": 80, 
+        "start": 65, 
+        "text": "Friday the 20th", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 109, 
+        "start": 95, 
+        "text": "Sunday evening", 
+        "type": "TIME", 
+        "value": "2016-11-20TEV"
+    }
+]
+anyone going back to nova around sunday? I need a ride and can pay for gas money
+[
+    {
+        "end": 39, 
+        "start": 33, 
+        "text": "sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+Anyone going to DC or Maryland for the weekend of Easter? Gas money provided!
+[
+    {
+        "end": 46, 
+        "start": 35, 
+        "text": "the weekend", 
+        "type": "DATE", 
+        "value": "2016-W46-WE"
+    }, 
+    {
+        "end": 56, 
+        "start": 50, 
+        "text": "Easter", 
+        "type": "DATE", 
+        "value": "2016-03-27"
+    }
+]
+Need a ride to Glen Allen and back
+[]
+Heading to Raleigh/Youngsville NC area around noon on Friday the third. Can't give a ride back from spring break, but can definitely get you to that area.
+[
+    {
+        "end": 70, 
+        "start": 46, 
+        "text": "noon on Friday the third", 
+        "type": "TIME", 
+        "value": "2016-11-03T12:00"
+    }, 
+    {
+        "end": 106, 
+        "start": 100, 
+        "text": "spring", 
+        "type": "DATE", 
+        "value": "2016-SP"
+    }
+]
+Driving to Roanoke tomorrow afternoon. If anyone needs a ride message me!
+[
+    {
+        "end": 37, 
+        "start": 19, 
+        "text": "tomorrow afternoon", 
+        "type": "TIME", 
+        "value": "2016-11-17TAF"
+    }
+]
+Is anyone going home the weekend of December 3rd? we are throwing my mom a surprise party and I'd love to be there. I will pay for gas. Please let me know!
+[
+    {
+        "end": 48, 
+        "start": 21, 
+        "text": "the weekend of December 3rd", 
+        "type": "DATE", 
+        "value": "2016-12-03"
+    }
+]
+Looking for a ride to Richmond on either the 3rd or the 4th. Will pay gas $!
+[]
+Looking for a ride from nova (kingstowne/Alexandria area) to vcu sometime today, will throw for gas!
+[
+    {
+        "end": 79, 
+        "start": 74, 
+        "text": "today", 
+        "type": "DATE", 
+        "value": "2016-11-16"
+    }
+]
+Anyone heading to nova either this evening or early tomorrow morning? Will provide gas.
+[
+    {
+        "end": 42, 
+        "start": 30, 
+        "text": "this evening", 
+        "type": "TIME", 
+        "value": "2016-11-16TEV"
+    }, 
+    {
+        "end": 68, 
+        "start": 46, 
+        "text": "early tomorrow morning", 
+        "type": "TIME", 
+        "value": "2016-11-17TMO"
+    }
+]
+Driving Exeter to Taunton and back, Tuesday morning and Wednesday evening.
+[
+    {
+        "end": 51, 
+        "start": 36, 
+        "text": "Tuesday morning", 
+        "type": "TIME", 
+        "value": "2016-11-15TMO"
+    }, 
+    {
+        "end": 73, 
+        "start": 56, 
+        "text": "Wednesday evening", 
+        "type": "TIME", 
+        "value": "2016-11-16TEV"
+    }
+]
+Is anyone going to UVA this Friday at or after 2pm and returning Sunday?   I can certainly help pay for gas.
+[
+    {
+        "end": 34, 
+        "start": 23, 
+        "text": "this Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }, 
+    {
+        "end": 50, 
+        "start": 47, 
+        "text": "2pm", 
+        "type": "TIME", 
+        "value": "2016-11-16T14:00"
+    }, 
+    {
+        "end": 71, 
+        "start": 65, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+need a ride to UCF on saturday april, 27th. I live in melbourne, but anyone that is taking 95 back to UCF would be able to help me out. Will provide gas $$$
+[
+    {
+        "end": 36, 
+        "start": 22, 
+        "text": "saturday april", 
+        "type": "DATE", 
+        "value": "2017-WXX-6"
+    }
+]
+Anyone driving to Hampton VA (Newport News area) this Friday the 4th ?????
+[
+    {
+        "end": 60, 
+        "start": 49, 
+        "text": "this Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }
+]
+Looking for BU-Montreal the 17th at four! One spot. Thanks
+[]
+Going to NOVA (ffx/chantilly/gmu area) tomorrow (Friday) afternoon and coming back Saturday if anyone needs a ride to or from there, let me know!
+[
+    {
+        "end": 47, 
+        "start": 39, 
+        "text": "tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }, 
+    {
+        "end": 55, 
+        "start": 49, 
+        "text": "Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }, 
+    {
+        "end": 66, 
+        "start": 57, 
+        "text": "afternoon", 
+        "type": "TIME", 
+        "value": "2016-11-16TAF"
+    }, 
+    {
+        "end": 91, 
+        "start": 83, 
+        "text": "Saturday", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }
+]
+is anyone driving to VIRGINIA TECH on Saturday?? i will pay gas money and can leave anytime
+[
+    {
+        "end": 46, 
+        "start": 38, 
+        "text": "Saturday", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }
+]
+Looking for BU to New Hampshire or Vermont Friday the 9th.
+[
+    {
+        "end": 57, 
+        "start": 43, 
+        "text": "Friday the 9th", 
+        "type": "DATE", 
+        "value": "2016-11-09"
+    }
+]
+I'll be driving home to Gloucester, VA which is near Yorktown with 1 maybe 2 seats in my truck leaving Thursday afternoon. message me if you need a ride.
+[
+    {
+        "end": 121, 
+        "start": 103, 
+        "text": "Thursday afternoon", 
+        "type": "TIME", 
+        "value": "2016-11-17TAF"
+    }
+]
+headed to Blacksburg this thursday night, stopping in Roanoke along the way if anyone needs a ride to either place.
+[
+    {
+        "end": 40, 
+        "start": 21, 
+        "text": "this thursday night", 
+        "type": "TIME", 
+        "value": "2016-11-17TNI"
+    }
+]
+Is anyone Returning back to Orlando on the March 9th
+[
+    {
+        "end": 52, 
+        "start": 43, 
+        "text": "March 9th", 
+        "type": "DATE", 
+        "value": "2017-03-09"
+    }
+]
+does anyone know somebody COMING to vcu FROM tech? my boyfriend would love a ride here
+[]
+Looking for a ride to NOVA (Woodbridge/Lorton area) this Thursday.  Gas money provided
+[
+    {
+        "end": 65, 
+        "start": 52, 
+        "text": "this Thursday", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+I'm driving back to the New hartford/Utica area Next Tuesday for Thanksgiving around 3:30. I'm passing through the Syracuse area and have room for 3 people.
+[
+    {
+        "end": 60, 
+        "start": 48, 
+        "text": "Next Tuesday", 
+        "type": "DATE", 
+        "value": "2016-11-22"
+    }, 
+    {
+        "end": 77, 
+        "start": 65, 
+        "text": "Thanksgiving", 
+        "type": "DATE", 
+        "value": "2016-11-24"
+    }, 
+    {
+        "end": 89, 
+        "start": 85, 
+        "text": "3:30", 
+        "type": "TIME", 
+        "value": "2016-11-16T03:30"
+    }
+]
+Need a ride back from NOVA to VT on Sunday! Is anyone leaving Sunday ? I'll chip in for gas money !!! I have a test Monday morning.
+[
+    {
+        "end": 42, 
+        "start": 36, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 68, 
+        "start": 62, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 130, 
+        "start": 116, 
+        "text": "Monday morning", 
+        "type": "TIME", 
+        "value": "2016-11-14TMO"
+    }
+]
+Is anyone heading down to Pembroke Pines Saturday morning/afternoon?
+[
+    {
+        "end": 49, 
+        "start": 41, 
+        "text": "Saturday", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }
+]
+is there anyone going to Charlotte, NC or passing through the city this week?
+[
+    {
+        "end": 76, 
+        "start": 67, 
+        "text": "this week", 
+        "type": "DATE", 
+        "value": "2016-W46"
+    }
+]
+anyone going to tech from hampton roads area tomorrow?
+[
+    {
+        "end": 53, 
+        "start": 45, 
+        "text": "tomorrow", 
+        "type": "DATE", 
+        "value": "2016-11-17"
+    }
+]
+Looking for a ride from NOVA/DC back to blacksburg sometime between aug. 4-6, will pay for gas
+[
+    {
+        "end": 72, 
+        "start": 68, 
+        "text": "aug.", 
+        "type": "DATE", 
+        "value": "2017-08"
+    }
+]
+Looking for a ride to Purcellville/Round Hill area (10/21) and back (10/23). Looking for a ride from Tech to Round Hill or Purcellville area in Loudoun county. Even better, if there's a ride to Winchester, that'd be best. I'll definitely chip in for gas. Need to leave after 2:15 on Friday, 10/21; would like to leave at 3:00 or later on Sunday, 10/23. If you can drive there and back on those dates, let me know. Thanks again.
+[
+    {
+        "end": 289, 
+        "start": 275, 
+        "text": "2:15 on Friday", 
+        "type": "TIME", 
+        "value": "2016-11-18T02:15"
+    }, 
+    {
+        "end": 325, 
+        "start": 321, 
+        "text": "3:00", 
+        "type": "TIME", 
+        "value": "2016-11-16T03:00"
+    }, 
+    {
+        "end": 344, 
+        "start": 338, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+going from nova to Blacksburg Sunday between 1-3 PM if anyone needs a ride
+[
+    {
+        "end": 36, 
+        "start": 30, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+Looking for a ride back up from Miami/Fort Lauderdale this upcoming weekend Sunday or Monday is fine with me. Will chip in for gas
+[
+    {
+        "end": 82, 
+        "start": 68, 
+        "text": "weekend Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }, 
+    {
+        "end": 92, 
+        "start": 86, 
+        "text": "Monday", 
+        "type": "DATE", 
+        "value": "2016-11-14"
+    }
+]
+Anyone going to WM Friday (4/1) or Saturday (4/2) and coming back Sunday? Gas $$$ provided!
+[
+    {
+        "end": 25, 
+        "start": 19, 
+        "text": "Friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }, 
+    {
+        "end": 43, 
+        "start": 35, 
+        "text": "Saturday", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }, 
+    {
+        "end": 72, 
+        "start": 66, 
+        "text": "Sunday", 
+        "type": "DATE", 
+        "value": "2016-11-20"
+    }
+]
+I'm driving return from exeter to Bristol tomorrow evening, and the same route this Friday morning returning this Sunday evening. Let me know if you're interested.
+[
+    {
+        "end": 58, 
+        "start": 42, 
+        "text": "tomorrow evening", 
+        "type": "TIME", 
+        "value": "2016-11-17TEV"
+    }, 
+    {
+        "end": 98, 
+        "start": 79, 
+        "text": "this Friday morning", 
+        "type": "TIME", 
+        "value": "2016-11-18TMO"
+    }, 
+    {
+        "end": 128, 
+        "start": 109, 
+        "text": "this Sunday evening", 
+        "type": "TIME", 
+        "value": "2016-11-20TEV"
+    }
+]
+Looking for a ride to the Cities Wednesday April 1st. Will help with gas.
+[
+    {
+        "end": 52, 
+        "start": 33, 
+        "text": "Wednesday April 1st", 
+        "type": "DATE", 
+        "value": "2017-04-01"
+    }
+]
+Going up to Fairfax (22031) on 6/17 (anytime before 5, pre flexible with time ) and back to blacksburg 6/19 (late at night ) 20$ each way
+[
+    {
+        "end": 122, 
+        "start": 117, 
+        "text": "night", 
+        "type": "TIME", 
+        "value": "2016-11-16TNI"
+    }
+]
+Going down to pines/ fort Lauderdale in a few hours. Call or text me at (954)376-9122 if you're interested but I'm planning on leaving soon!
+[
+    {
+        "end": 51, 
+        "start": 40, 
+        "text": "a few hours", 
+        "type": "DURATION", 
+        "value": "PTXH"
+    }
+]
+Leaving montreal (metro longueuil) on sunday at 8pm to sherbrooke/lennoxville. 15$ inbox
+[
+    {
+        "end": 51, 
+        "start": 38, 
+        "text": "sunday at 8pm", 
+        "type": "TIME", 
+        "value": "2016-11-20T20:00"
+    }
+]
+anyone driving to Bristol this friday or saturday?
+[
+    {
+        "end": 37, 
+        "start": 26, 
+        "text": "this friday", 
+        "type": "DATE", 
+        "value": "2016-11-18"
+    }, 
+    {
+        "end": 49, 
+        "start": 41, 
+        "text": "saturday", 
+        "type": "DATE", 
+        "value": "2016-11-19"
+    }
+]
+None
+
+Process finished with exit code 0
