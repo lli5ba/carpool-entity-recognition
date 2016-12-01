@@ -1,0 +1,548 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map-canvas{
+  height: 95%;
+}
+
+
+/***** Clear Styles *****/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-style:inherit;font-size:100%;font-family:Helvetica, Arial, Verdana, sans-serif;;vertical-align:baseline;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;font-weight:normal}
+ol,ul{list-style:none;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+a, a:hover, a:active {outline: none;text-decoration:none;color:inherit;}
+a:hover {text-decoration:underline}
+html {overflow-y: scroll;}
+
+/***** Custom Styles *****/
+body {font: 12px Tahoma, Geneva, Verdana, sans-serif;background-color:#eff0f5}
+.content{width:960px;margin:20px auto 0px auto}
+.clear{clear:both;}
+
+/** Preview **/
+.preview{width:480px;float:right;font-size:11px;}
+.preview .heading{font-size:18px;font-weight:bold;color:#163564;letter-spacing:-1px;margin:20px 0px 0px 20px;}
+.preview .fun{font-size:16px;color:#163564;margin:5px 0px 15px 20px;}
+.preview .mobileNote{display:none;margin-bottom:20px;color:#777;font-style:italic;width:200px;margin-left:50px;}
+.preview .previewSpacer{height:1px;width:100%;background-color:#a6abb1;margin-bottom:20px;}
+
+.classic{background-color:#fff;border:0px solid black;padding-left:3px;}
+.classic .previewContainer{border-left:1px solid #cdcdcd;padding:10px 0px 10px 20px;}
+.classic .topLine{width:100%;height:1px;background-color:#ebebeb;margin-bottom:15px;}
+
+.classic .statusPic{float:left;margin-right:10px;height:50px;width:50px;}
+.classic .statusPic img{height:50px;width:50px;}
+.classic .statusContent{float:left;width:390px;}
+.classic .statusName{font-weight:bold;color:#2b5599;margin-bottom:3px;}
+.classic .statusText{margin-bottom:5px;}
+.classic .statusLinks, .commentLinks, .commentLikes{color:#6a91a7;margin-bottom:5px;}
+.classic .statusLinks .statusDate, .commentLinks span{color:#b2b2b4}
+
+.classic .likeBar{background-color:#eceff8;min-height:27px;width:100%;clear:both;display:none}
+.classic .likeBar .thumb{margin:4px 5px 0px 5px;float:left;}
+.classic .likeBar p{padding-top:6px;padding-bottom:5px;}
+.classic .likeBar .statusLikes{float:left;color:#2b5599;margin-right:3px;}
+.classic .likeBar .statusLikes span{color:#000}
+.classic .likeBar .statusOtherLikes{float:left}
+.classic .likeBar .statusOtherLikes span{color:#2b5599}
+
+.classic .comment{background-color:#eceff8;}
+.classic .comment .commentPic{float:left;margin: 5px 9px 5px 5px;height:32px;width:32px;}
+.classic .comment .commentPic img{height:32px;width:32px;}
+.classic .comment .commentContent{float:left;width:310px;margin-top:0px;padding:5px 5px 0px 0px;}
+.classic .comment .commentName{float:left;font-weight:bold;color:#2b5599;margin-right:3px}
+.classic .comment .commentText{margin-bottom:2px;}
+.classic .comment .commentLinks, .comment .commentLikes{float:left;}
+.classic .comment .thumb{width:12px;height:12px;float:left;margin:0px 3px;}
+.classic .comment .commentLikeWord{color:#6a91a7}
+
+.classic .write{background-color:#eceff8;display:none}
+.classic .write .boxWrap{padding:5px 8px 5px 5px;}
+.classic .write .box{height:20px;width:100%;background:#fff;border:1px solid #c4c5ca}
+.classic .write .box p{color:#888888;margin:3px;}
+
+.classic .borderLine{height:0px;border-top:1px solid #d8d9de;border-bottom:1px solid #fff;clear:both}
+
+.timeline{background-color:#e7ebf4;padding:15px;position:relative;overflow:hidden;display:none;border:1px solid black;}
+.timeline .previewContainer{background:#fff;padding:3px;width:410px;margin-left:10px;border:1px solid #c6c9d2;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.timeline .sideline{width:3px;height:10000px;background-color:#c6cad6;position:absolute;top:-15px;right:19px;}
+
+.timeline .topPart{margin:12px 10px 0px 12px;position:relative;}
+.timeline .topPart .sidelineArrow{background:url('images/linesect.png') no-repeat;height:44px;width:31px;position:absolute;top:-14px;right:-36px;}
+.timeline .topPart .statusPic{float:left;margin-right:8px;height:32px;width:32px;}
+.timeline .topPart .statusPic img{height:32px;width:32px;}
+.timeline .topPart .statusName{font-weight:bold;color:#2b5599;margin:13px 0px 1px 0px}
+.timeline .topPart .statusDate{color:#9b9c9e}
+.timeline .topPart .line{clear:both;margin-top:6px;height:1px;width:100%;background-color:#e9e3e5}
+.timeline .topPart .statusText{font-size:13px;margin:15px 0px;}
+
+.timeline .bottomPart{background-color:#eeeff4}
+.timeline .bottomPart .statusLinks{color:#2b5599;padding:6px 12px;border-bottom:1px solid #fff}
+
+.timeline .bottomPart .likeBar{min-height:27px;width:100%;border-bottom:1px solid #fff;display:none}
+.timeline .bottomPart .likeBar .thumb{margin:4px 5px 0px 5px;float:left;}
+.timeline .bottomPart .likeBar p{padding-top:6px;padding-bottom:5px;}
+.timeline .bottomPart .likeBar .statusLikes{float:left;color:#2b5599;margin-right:3px;}
+.timeline .bottomPart .likeBar .statusLikes span{color:#000}
+.timeline .bottomPart .likeBar .statusOtherLikes{float:left}
+.timeline .bottomPart .likeBar .statusOtherLikes span{color:#2b5599}
+
+.timeline .bottomPart .comment{}
+.timeline .bottomPart .comment .commentPic{float:left;margin: 5px 9px 5px 5px;height:32px;width:32px;}
+.timeline .bottomPart .comment .commentPic img{height:32px;width:32px;}
+.timeline .bottomPart .comment .commentContent{float:left;width:310px;margin-top:1px;padding:5px 5px 0px 0px;}
+.timeline .bottomPart .comment .commentName{float:left;font-weight:bold;color:#2b5599;margin-right:3px}
+.timeline .bottomPart .comment .commentText{margin-bottom:2px;}
+.timeline .bottomPart .comment .commentLinks, .comment .commentLikes{float:left;}
+.timeline .bottomPart .comment .thumb{width:12px;height:12px;float:left;margin:0px 3px;}
+.timeline .bottomPart .comment .commentLikeWord{color:#6a91a7}
+
+.timeline .bottomPart .write{display:none}
+.timeline .bottomPart .write .boxWrap{padding:5px 8px 5px 5px;}
+.timeline .bottomPart .write .box{height:20px;width:100%;background:#fff;border:1px solid #c4c5ca}
+.timeline .bottomPart .write .box p{color:#888888;margin:3px;}
+
+.timeline .borderLine{height:0px;border-top:1px solid #fff;clear:both}
+
+
+
+/** Maker form **/
+
+.maker {width:460px;color:#163564;float:left;}
+.maker input{padding:4px;border:1px solid #9b9fa9}
+.maker textarea{padding:4px;border:1px solid #9b9fa9;font: 12px Tahoma, Geneva, Verdana, sans-serif;width:100%}
+.maker .dot{border:0px}
+
+.maker .title{font-weight:bold;}
+.maker .titleFormat{float:left;margin-right:20px;}
+.maker .status{margin-top:10px;border-bottom:1px solid #cdcdcd;padding:0px 20px 15px 0px}
+
+.maker .commentFormSection{margin-top:15px;border-bottom:1px solid #cdcdcd;padding:0px 20px 15px 0px;display:none}
+
+.maker .realButton{height:0px;width:0px;position:absolute;left:-50px;overflow:hidden;-moz-opacity:0;filter:alpha(opacity:0);opacity:0;}
+.maker .fakeButton{width:100px;padding:4px;background-color:#5e7cb8;border:1px solid #3a416b;color:white;font-weight:bold;text-align:center;float:left;cursor:pointer;}
+.maker .fakeButton:hover{background-color:#3B5B9C;}
+.maker .upExplain{float:left;margin-top:5px;padding-left:6px;font-size:10px;}
+
+.maker .addComment{margin:10px 0px;width:100px;padding:4px;background-color:#5e7cb8;border:1px solid #3a416b;color:white;font-weight:bold;text-align:center;cursor:pointer;}
+.maker .addComment:hover{background-color:#3B5B9C;}
+
+.submitButton{border:1px solid #8a8a8a;background:#eee;font-weight:bold;font-size:13px;padding:6px 8px;cursor:pointer;}
+.submitButton:hover{border:1px solid #4d4d4d;background:#ddd;}
+
+.maker .makerSpacer{height:10px;border-bottom:1px solid #cdcdcd;}
+.maker #formatClassic{margin-right:10px;}
+.maker #statusName{width:190px;}
+.maker .likers{line-height:10px}
+.maker .likers span{font-size:8px}
+.maker #statusLikes{width:180px}
+.maker #statusOtherLikes{width:25px}
+.maker #statusYouLike{vertical-align:top;border:0px;}
+
+table{width:100%}
+table .h{width:85px;vertical-align:middle;text-align:right;padding-right:4px;}
+
+
+/** Header **/
+.header{width:100%;height:80px;background-color:#3b5999}
+.header a:hover{text-decoration:none}
+.header .headerContent{margin:0px auto;width:960px;}
+.header h1{float:left;padding-top:24px;font-weight:bold;font-size:38px;color:#fff;letter-spacing:-2px}
+.header h2{float:left;padding:46px 0px 0px 50px;font-weight:bold;font-size:14px;color:#fff;}
+
+
+/** Footer **/
+.footer{color:#163564;width:960px;margin:0px auto;}
+.footer .title{font-weight:bold;margin:0px 0px 10px 0px}
+.footer li{margin:0px 0px 5px 15px;}
+.footer .list{float:right;}
+.footer .list p{float:left;margin-left:25px;}
+.footer .leftSection{float:left;width:200px;margin-left:50px;}
+.footer .rightSection{float:left;width:710px;}
+.footer .footerLine{height:1px;width:100%;background-color:#a6abb1;margin:50px 0px 20px 0px;}
+.footer .footerSpacer{clear:both;height:15px;}
+.footer .facebook{text-align:right;margin:10px 0px;font-size:11px;}
+
+/***** Permalink Page *****/
+.permalink .imagePanel{width:600px;float:left;}
+.permalink .imagePanel .topBlock{width:468px;margin:0px auto;}
+.permalink .imagePanel .imgBlock{width:500px;margin:0px auto;}
+.permalink .imagePanel .imgBlock img{border:1px solid #000;float:left;margin:100px 0px;}
+.permalink .sidePanel{float:right;width:350px;color:#163564;}
+.permalink .sidePanel:after{display:block;content:' ';clear:both;height:30px;}
+.permalink .sidePanel .heading{margin-bottom:5px;font-weight:bold;}
+.permalink .sidePanel .headingShare{font-size:16px;margin-bottom:5px;}
+.permalink .sidePanel .linebreak{height:0px;width:100%;border-top:1px solid #888;margin:15px 0px;}
+.permalink .linkTit{font-weight:bold;margin:10px 0px 3px 0px;}
+.permalink input{padding:4px;border:1px solid #9b9fa9;width:100%}
+
+/***** Page Pages *****/
+.page{}
+.page a{color:#163564}
+.page .pageTitle{font-size:18px;font-weight:bold;color:#163564;letter-spacing:-1px;margin-bottom:25px}
+.page .infoSection{width:600px;}
+.page .infoSection .litTit{font-weight:bold;margin-bottom:8px;}
+.page .infoSection .lit{margin-bottom:20px;}
+.page .sideColumn{float:right;width:350px;}
+
+/***** Adverts *****/
+.ad-block{height:250px;width:300px;margin:30px auto;}
+.ad-block-sideColumn{height:250px;width:300px;margin:40px auto 20px auto;}
+.ad-banner{width:730px;margin:0px auto 25px auto;}
+
+/***** Prompt Window *****/
+.promptWindow{display:none;}
+.promptWindow .pw-image{float: left; margin-right: 25px; width: 235px;}
+.promptWindow .pw-subtitle{text-align:center;font-weight:bold;font-size:20px;margin-top:75px;margin-bottom:25px;}
+.promptWindow .pw-line-1{text-align:center;margin-bottom:25px;font-size:16px;line-height:20px;}
+.promptWindow .pw-line-2{text-align:center;}
+.promptWindow .pw-line-2 .pw-link{font-weight:bold;font-size:24px;color:#358cca;}
+
+
+/** Tablet Portrait size to standard 960 (devices and browsers) **/
+@media only screen and (min-width: 569px) and (max-width: 960px) {
+	
+	.content{width:550px;}
+	.maker{width:550px;float:none;}
+	.preview{margin:25px auto;float:none;}
+	
+	.header{height:130px;}
+	.header .headerContent{width:310px;padding-top:15px;}
+	.header h1{float:none;text-align:center;padding-top:0px;}
+	.header h2{float:none;text-align:center;padding:10px 30px 0px;}
+
+	.footer{width:550px;}
+	.footer .leftSection{width:310px;margin:0px auto;float:none;font-size:14px;text-align:center;padding-bottom:15px;border-bottom: 1px solid #ddd;}
+	.footer .leftSection li{margin:0px 0px 10px 0px;}
+	.footer .rightSection{width:310px;margin:25px auto 0px;float:none;}
+	.footer .list p{font-size:14px;margin:0px 0px 15px 0px;float:none;width:300px;text-align:center;}
+	.footer .copyrightLine{font-size:12px!Important;}
+	
+	.page .infoSection{width:250px;}
+	.page .sideColumn{width:300px}
+	.ad-banner{width: 550px;overflow: hidden;}
+	
+}
+
+/** Mobile Phones (both Portrait and Landscape) **/
+@media only screen and (min-width : 0px) and (max-width : 568px) { 
+	
+	.content{padding:0px 2%;width:96%;}
+	.maker{width:100%;}
+	.preview{width:100%;margin-top:10px;}
+	.preview .mobileNote{display:block;}
+	
+	.header{height:130px;}
+	.header .headerContent{width:310px;padding-top:15px;}
+	.header h1{float:none;text-align:center;padding-top:0px;}
+	.header h2{float:none;text-align:center;padding:10px 30px 0px;}
+	
+	.classic .previewContainer{padding-left:10px}
+	.classic .statusContent{float: left;width: 220px;}
+	.classic .comment .commentContent{width: 168px;}
+	
+	.timeline .previewContainer{width: 240px;}
+	.timeline .bottomPart .comment .commentContent{width: 188px;}
+	
+	.footer{width:320px;}
+	.footer .leftSection{font-size:14px;text-align:center;padding-bottom:15px;border-bottom: 1px solid #ddd;}
+	.footer .leftSection li{margin:0px 0px 10px 0px;}
+	.footer .rightSection{width:310px;margin-top:25px;}
+	.footer .list p{font-size:14px;margin:0px 0px 15px 0px;float:none;width:300px;text-align:center;}
+	.footer .copyrightLine{font-size:12px!Important;}
+	
+	.page .infoSection{width:310px;}
+	.page .sideColumn{width:310px}
+	.ad-banner{width: 310px;overflow: hidden;margin:0px;}
+	
+	
+	.permalink .imagePanel{width:100%;}
+	.permalink .imagePanel .topBlock{width:100%;}
+	.permalink .imagePanel .imgBlock{width:100%;}
+	.permalink .imagePanel .imgBlock img{width:100%;margin:25px 0px;}
+	.permalink .sidePanel{float:none;margin-left:2%;margin-right:2%;width:96%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
